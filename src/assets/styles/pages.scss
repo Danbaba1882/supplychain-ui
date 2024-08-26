@@ -1,0 +1,123 @@
+@import "./variables.scss";
+
+.hero{
+  background-image: url(../images/hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  padding: 15vh 0;
+  .overband{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0%;
+      top: 0%;
+      background-color: purple;
+  }
+  .stake-spacer{
+    width: 100%;
+    height: calc(25vh - 10vw);
+    //background-color: rgba(204, 82, 60, 0.89);
+  }
+  .info-sect{
+    color: $primary-wine;
+    width: 90%;
+    max-width: 660px;
+    margin: auto;
+    padding: 3vh 2em;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 2px 0 12px 3px rgba(0, 0, 0, 0.3);
+    background-color: $primary-cream;
+    h1{
+      font-weight: 700;
+    }
+    .stake-grid{
+        display: grid;
+        grid-template-columns: auto 150px;
+        border-radius: 10px;
+        max-width: 80vw;
+        transform: translate(-0.4em);
+        input, button { 
+            height: 100%;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 0 8px 1px $black-faint4;
+        }
+        input{
+            padding: 12px 15px;
+            background-color: $white-faint2;
+            // border-radius: 10px 0 0 10px;
+            border: 1px solid $primary-wine;
+            min-width: none;
+            color: $primary-wine-hover;
+            border-radius: 6px;
+            display: block;
+            width: 100%;
+            &:focus{
+                outline: none;
+            }
+        }
+        button{
+          margin-left: 0.8em;
+          background-color: $primary-wine;
+          color: $white;
+          transition: 0.3s ease;
+          cursor: pointer;
+          border-radius: 6px;
+          display: block;
+          width: 100%;
+          padding: 8px;
+          font-size: 1.2em;
+          &:hover{
+              background-color: $primary-wine-hover;
+          }
+          &:active{
+              background-color: $primary-wine-hover;
+              transform: translateY(3px);
+          }
+          &:focus{
+            outline: none;
+          }
+        }
+        @include mediaM(750px) {
+          display: block;
+          button{
+            margin-left: 0;
+            margin-top: 0.8em;
+          }
+        }
+    }
+    .stake-button{
+      width: 100%;
+      button{
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        padding: 8px;
+        background-color: $primary-wine;
+        color: $white;
+        transition: 0.3s ease;
+        cursor: pointer;
+        border-radius: 6px;
+        &:hover{
+            background-color: $primary-wine-hover;
+        }
+        &:active{
+            background-color: $primary-wine-hover;
+            transform: translateY(3px);
+        }
+        &:focus{
+          outline: none;
+        }
+      }
+    }
+  }
+}
+

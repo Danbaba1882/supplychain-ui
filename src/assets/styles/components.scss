@@ -1,0 +1,65 @@
+@import "./variables.scss";
+
+.exclusive-card, .premium-card{
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid #fff;
+    box-shadow: 10px 10px 10px 0 rgba(186, 58, 124, 0.5);
+    padding: 10px 7px;
+    .content-height{
+        @include mediaW(992px){
+            min-height: 230px;
+        }
+        @include mediaW(1070px){
+            min-height: 191px;
+        }
+        @include mediaW(1190px){
+            min-height: 172px;
+        }
+        @include mediaW(1250px){
+            min-height: 152px;
+        }
+    }
+}
+
+.premium-card{
+    box-shadow: 10px 10px 10px 0 rgba(255, 255, 255, 0.3);
+}
+
+.sub-header-comp{
+    position: relative;
+    padding: 2vmax;
+    background-image: url(../images/bg-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    .bg-slant{
+        position: absolute;
+        background-color: rgba(18, 18, 18, 0.90);
+        width: 60%;
+        height: 100%;
+        bottom: 0;
+        right: 0;
+        clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+        @include mediaM(850px){
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            width: 100%;
+            height: 55%;
+        }
+    }
+    .sub-header-space{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 94%;
+        max-width: 1200px;
+        margin: 4vh auto;
+        @include mediaM(850px){
+            margin: 2vh auto;
+            display: block;
+            .topic{
+                padding-bottom: 2vh;
+            }
+        }
+    }
+}

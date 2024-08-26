@@ -1,0 +1,129 @@
+// Color variables
+
+$primary-blue-brighter: rgb(65, 84, 255);
+$primary-blue-bright: rgb(35, 57, 252);
+$primary-blue: rgb(24, 40, 182);
+$primary-blue-hover: rgb(30, 39, 123);
+$primary-blue-active: rgb(0, 7, 66);
+
+$primary-blue-faint1: rgba(24, 40, 182, 0.7);
+$primary-blue-faint2: rgba(24, 40, 182, 0.45);
+$primary-blue-faint3: rgba(24, 40, 182, 0.2);
+$primary-blue-faint4: rgba(24, 40, 182, 0.1);
+$primary-blue-faint5: rgba(24, 40, 182, 0.06);
+
+
+$primary-blue-hover-faint1: rgba(30, 39, 123, 0.7);
+$primary-blue-hover-faint2: rgba(30, 39, 123, 0.45);
+$primary-blue-hover-faint3: rgba(30, 39, 123, 0.2);
+$primary-blue-hover-faint4: rgba(30, 39, 123, 0.1);
+$primary-blue-hover-faint5: rgba(30, 39, 123, 0.06);
+
+$header-blue: #E7F4FF;
+
+$primary-shade: #041926;
+$primary-shade-light: #07263a;
+
+$primary-bg: #F6F9FF;
+
+$bright-blue: #283FFF;
+$bright-blue-hover: #0315b9;
+$bright-blue-active: #000c74;
+
+$primary-red: #f50606;
+$primary-red-hover: #880000;
+$primary-red-active: #490000;
+
+$primary-pale: #ba3a7c;
+$primary-pale-hover: #9b2b65;
+$primary-pale-active: #6e1744;
+
+$secondary-pale: #A771EC;
+$secondary-pale-hover: #713ab8;
+
+$primary-pale-faint1: rgba(186, 58, 124, 0.7);
+$primary-pale-faint2: rgba(186, 58, 124, 0.451);
+$primary-pale-faint3: rgba(186, 58, 124, 0.2);
+$primary-pale-faint4: rgba(186, 58, 124, 0.1);
+$primary-pale-faint5: rgba(186, 58, 124, 0.06);
+
+$primary-green-faint1: rgba(97, 195, 142, 0.7);
+$primary-green-faint2: rgba(97, 195, 142, 0.45);
+$primary-green-faint3: rgba(97, 195, 142, 0.2);
+$primary-green-faint4: rgba(97, 195, 142, 0.1);
+$primary-green-faint5: rgba(97, 195, 142, 0.06);
+
+$secondary-blue: #567df4;
+$secondary-blue: #567df4;
+$secondary-blue-hover: #3d5bb4;
+$secondary-blue-active: #1e3270;
+
+$base-color: #f6fbfe;
+$base-color2: rgba(207, 237, 221, 0.678);
+$base-highlight: #f6f9fe;
+
+$light-blue: #eef7fe;
+$light-orange: #ffeed5;
+$orange: #f7a02c;
+$orange-mid-dark: #df7e00;
+$orange-dark: #ca7300;
+$light-cyan: #b2f0fb;
+
+$white: #ffffff;
+$white-faint1: rgba(255, 255, 255, 0.7);
+$white-faint2: rgba(255, 255, 255, 0.45);
+$white-faint3: rgba(255, 255, 255, 0.2);
+$white-faint4: rgba(255, 255, 255, 0.1);
+
+$off-white: #f1f3f6;
+$off-black: #041926;
+
+$black: #000000;
+$black-faint1: rgba(0, 0, 0, 0.7);
+$black-faint2: rgba(0, 0, 0, 0.45);
+$black-faint3: rgba(0, 0, 0, 0.2);
+$black-faint4: rgba(0, 0, 0, 0.1);
+
+$grey-lightest: #eff0f2;
+$grey-light: #cccccc;
+$grey-mid: #818181;
+$grey-dark: #4f5873;
+
+$faint-font: rgba(34, 33, 91, 0.6);
+
+$brown: #4d2e44;
+$red: #ff0101;
+$red-hover: #a10000;
+$red-active: #530000;
+$red-faded: #eb5757;
+
+$pink-1: #F294DD;
+$pink-2: #E24DC0;
+$pink-3: #a52286;
+
+
+$primary-wine-light: #aa311c;
+$primary-wine-light-hover: #8a1d09;
+
+$primary-wine: #501005;
+$primary-wine-hover: #2c0700;
+
+$primary-cream: #f0f1dc;
+$primary-cream-hover: #ebe0be;
+// $yellow: #F7A02C;
+$dirty-green: #587d71;
+
+$transparent: rgba(0, 0, 0, 0);
+
+// Mixins
+
+@mixin mediaM($value) {
+  @media all and (max-width: $value) {
+    @content;
+  }
+}
+@mixin mediaW($value) {
+  @media all and (min-width: $value) {
+    @content;
+  }
+} ;
